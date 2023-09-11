@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50">
+        <source src="/pikachu-dance-disco-style-wallpaper.mp4" type="video/mp4" />
+    
+      </video>
+  
+  
+
+    <div class="fetch-container">
+        <img src="/pokeapi_256.png"> 
+       
+          
+        <div id="fetch-response"></div>
+    </div>
+
+    <div class="fetch-input-container">
+        <div class="imagen_pokemon">
+            <img src="" id="pokemon_img">
+        </div>
+       
+            <div class="informacion_pokemon">
+        <form id="pokeApi">
+                
+                    
+                    <input type="text" autocomplete="off" name="text" class="input" placeholder="Pokemon" id="pokemon">
+                    <button type="button" onclick="getPokemon()"> BUSCAR
+                    </button> 
+                               </form>
+                <div class="datos_pokemon">
+                   <div id="namePokemon"></div>
+                   <div id="foto_pokemon"></div>
+                   <div id="abilities">
+                    <table id="pokemonAbilitie"></table>
+                   </div>
+                </div>
+            </div>
+        
+</div>
+
+</main>
+<script src="poke.js"></script>
+
+    
+</body>
+</html>
